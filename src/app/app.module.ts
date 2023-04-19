@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { StoreModule } from '@ngrx/store';
 import { PersistanceService } from './shared/services/persistance.service';
-import { AppRoutingModule } from 'src/app-routing.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserService } from './shared/services/users.service';
 import { RouterModule } from '@angular/router';

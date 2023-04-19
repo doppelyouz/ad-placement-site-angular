@@ -1,6 +1,5 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
 import { StoreModule } from "@ngrx/store";
 import { RegisterComponent } from './components/register/register.component';
@@ -12,17 +11,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthEffects } from "./store/effects/auth.effects";
 import { reducers } from "./store/auth.reducer";
 
-const routes: Routes = [
-    {
-        path: 'register',
-        component: RegisterComponent
-    },
-    {
-        path: 'login',
-        component: LoginComponent
-    },
-]
-
 @NgModule({
     declarations: [RegisterComponent, LoginComponent],
     providers: [
@@ -30,7 +18,6 @@ const routes: Routes = [
     ],
     imports: [
         CommonModule,
-        RouterModule.forChild(routes),
         FormsModule,
         ReactiveFormsModule,
         BrowserModule,
