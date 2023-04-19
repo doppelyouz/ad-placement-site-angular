@@ -1,0 +1,26 @@
+<header class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <a routerLink="/" class="topbar__logo">doppelyouz</a>
+      </div>
+      <div class="col-8">
+        <div *ngIf="loading$ | async">Loading</div>
+        <div *ngIf="error$ | async">Error</div>
+        <nav class="topbar__nav">
+          <ul class="topbar__list" *ngIf="user$ | async; else loggedOut">
+            <li class="topbar__item"><a routerLink="/" class="topbar__link">Home</a></li>
+            <li class="topbar__item"><a routerLink="/new" class="topbar__link">New Ad</a></li>
+            <li class="topbar__item"><a routerLink="/profile" class="topbar__link">Profile</a></li>
+          </ul>
+          <ng-template #loggedOut>
+            <ul class="topbar__list">
+              <li class="topbar__item"><a routerLink="/login" class="topbar__link">Login</a></li>
+              <li class="topbar__item"><a routerLink="/register" class="topbar__link">Register</a></li>
+            </ul>
+          </ng-template>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

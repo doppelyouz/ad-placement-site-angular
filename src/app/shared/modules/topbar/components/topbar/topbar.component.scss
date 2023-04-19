@@ -1,0 +1,44 @@
+.topbar {
+  background-color: #8b8a8a;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.topbar__logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.topbar__nav {
+  text-align: right;
+}
+
+.topbar__list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar__item {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.topbar__link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.topbar__link:hover {
+  color: #000;
+}

@@ -1,0 +1,18 @@
+.error-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.link {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  background-color: rgb(105, 78, 105);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
