@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {UserInterface} from 'src/app/shared/types/user.interface';
+import { UserInterface } from 'src/app/shared/types/user.interface';
 import { url } from 'src/url';
 
 @Injectable({
@@ -14,7 +14,9 @@ export class UserService {
   getUsers(): Observable<UserInterface[]> {
     return this.http.get<UserInterface[]>(`${url}/users`);
   }
+
   getUsersById(id: string | number): Observable<UserInterface> {
     return this.http.get<UserInterface>(`${url}/users/${id}`);
   }
+
 }

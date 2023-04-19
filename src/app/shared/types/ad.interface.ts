@@ -1,6 +1,6 @@
 export interface AdInterface {
-  id: number;
-  userId: number;
+  id: string;
+  userId: string;
   category: string;
   title: string;
   text: string;

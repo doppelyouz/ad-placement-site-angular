@@ -20,14 +20,5 @@ export class TopbarComponent implements OnInit {
     this.user$ = this.store.pipe(select(selectUser))
     this.loading$ = this.store.pipe(select(selectLoading))
     this.error$ = this.store.pipe(select(selectError))
-    this.user$.subscribe(user => {
-      console.log(user);
-    });
-    this.loading$.subscribe(loading => {
-      console.log(loading);
-    });
-    this.error$.subscribe(error => {
-      console.log(error);
-    });
   }
 }

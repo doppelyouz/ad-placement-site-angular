@@ -1,29 +1,24 @@
 {
-  "ads": [],
-  "users": [
+  "ads": [
     {
-      "email": "younker12345@gmail.com",
-      "username": "doppelyouz",
-      "password": "doppel2004",
-      "ads": [],
-      "favorites": [],
-      "id": "id-1681847297540"
-    },
+      "category": "Real estate",
+      "title": "jyft",
+      "text": "jytf",
+      "image": "jytf",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681934171087"
+    }
+  ],
+  "users": [
     {
       "email": "1",
       "username": "1",
       "password": "1",
       "ads": [],
       "favorites": [],
-      "id": "id-1681847810063"
-    },
-    {
-      "email": "2",
-      "username": "2",
-      "password": "2",
-      "ads": [],
-      "favorites": [],
-      "id": "id-1681847904233"
+      "id": "id-1681933528487"
     }
   ]
 }

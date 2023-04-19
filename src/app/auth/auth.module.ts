@@ -31,13 +31,12 @@ const routes: Routes = [
     imports: [
         CommonModule,
         RouterModule.forChild(routes),
+        FormsModule,
         ReactiveFormsModule,
         BrowserModule,
         HttpClientModule,
         StoreModule.forFeature('auth', reducers),
         EffectsModule.forFeature([AuthEffects]),
-        FormsModule,
-        ReactiveFormsModule
     ]
 })
 export class AuthModule {}

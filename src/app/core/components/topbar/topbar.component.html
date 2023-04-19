@@ -5,8 +5,8 @@
         <a routerLink="/" class="topbar__logo">doppelyouz</a>
       </div>
       <div class="col-8">
-        <div *ngIf="loading$ | async">Loading</div>
-        <div *ngIf="error$ | async">Error</div>
+        <div *ngIf="loading$ | async"></div>
+        <div *ngIf="error$ | async"></div>
         <nav class="topbar__nav">
           <ul class="topbar__list" *ngIf="user$ | async; else loggedOut">
             <li class="topbar__item"><a routerLink="/" class="topbar__link">Home</a></li>
