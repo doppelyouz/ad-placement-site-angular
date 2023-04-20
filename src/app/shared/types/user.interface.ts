@@ -4,6 +4,7 @@ export interface UserInterface {
   username: string;
   email: string;
   password: string;
-  ads: number[],
-  favorites: number[]
+  ads: string[],
+  avatar: string,
+  favorites: string[]
 }

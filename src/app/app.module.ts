@@ -15,6 +15,8 @@ import { NewAdModule } from './shared/modules/new-ad/new-ad.module';
 import { TopbarComponent } from './core/components/topbar/topbar.component';
 import { AdService } from './shared/services/ads.service';
 import { MainModule } from './shared/modules/main/main.module';
+import { ProfileModule } from './shared/modules/profile/profile.module';
+import { SettingsModule } from './shared/modules/settings/settings.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { MainModule } from './shared/modules/main/main.module';
     ReactiveFormsModule,
     AuthModule,
     NewAdModule,
-    MainModule
+    MainModule,
+    ProfileModule,
+    SettingsModule
   ],
   providers: [PersistanceService, UserService, AdService],
   bootstrap: [AppComponent]

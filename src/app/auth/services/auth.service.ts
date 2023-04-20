@@ -30,7 +30,17 @@ export class AuthService {
   }
 
   register(registerRequest: RegisterRequestInterface): Observable<UserInterface[]> {
-    const user: UserInterface = {...registerRequest!, ads: [], favorites: [], id: `id-${Date.now()}` };
+    const user: UserInterface = {
+      ...registerRequest!,
+      ads: [],
+      favorites: [],
+      id: `user-${Date.now()}`,
+      avatar: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg'
+    };
     return this.http.post<UserInterface[]>(`${url}/users`, user);
+  }
+
+  updateUser(user: UserInterface): Observable<UserInterface> {
+    return this.http.put<UserInterface>(`${url}/users/${user.id}`, user);
   }
 }

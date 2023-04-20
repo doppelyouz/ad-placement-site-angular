@@ -6,6 +6,8 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 import { NewAdComponent } from './shared/modules/new-ad/components/new-ad/new-ad.component';
 import { AuthGuard } from './core/guards/auth.guard';
 import { MainComponent } from './shared/modules/main/components/main/main.component';
+import { ProfileComponent } from './shared/modules/profile/components/profile/profile.component';
+import { SettingsComponent } from './shared/modules/settings/components/settings/settings.component';
 
 const routes: Routes = [
   {
@@ -26,7 +28,20 @@ const routes: Routes = [
     component: NewAdComponent,
     canActivate: [AuthGuard]
   },
-  { path: '**', component: PageNotFoundComponent }
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  }
 ]
 
 

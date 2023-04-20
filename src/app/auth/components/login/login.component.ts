@@ -28,8 +28,8 @@ export class LoginComponent {
         ...this.myForm.value
       }
 
-      this.router.navigate(['/']);
       this.store.dispatch(login({loginRequest: request}))
+      this.router.navigate(['/profile'])
       this.myForm.reset();
     }
   }

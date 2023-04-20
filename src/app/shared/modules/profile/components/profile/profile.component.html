@@ -1,0 +1,22 @@
+
+  <div class="profile-wrapper">
+    <div class="profile-header">
+      <div class="profile-avatar">
+        <img [src]="user?.avatar" alt="Profile Avatar">
+      </div>
+      <div class="profile-info">
+        <h1>{{user?.username}}</h1>
+        <p>{{user?.email}}</p>
+      </div>
+    </div>
+    <div class="profile-content">
+      <div class="profile-sidebar">
+        <button class="setting"><a routerLink="/settings">Settings</a></button>
+        <button class="setting" (click)="logOut()">Log out</button>
+      </div>
+      <div class="profile-main">
+        <a routerLink="/myAds">My Ads</a>
+        <a routerLink="/favorites">Favorite Ads</a>
+      </div>
+    </div>
+  </div>
