@@ -1,14 +1,124 @@
 {
   "ads": [
     {
-      "category": "Real estate",
-      "title": "jyft",
-      "text": "jytf",
-      "image": "jytf",
+      "category": "Services",
+      "title": "service1",
+      "text": "serivece1",
+      "image": "https://postium.ru/wp-content/uploads/2022/08/image9-696x348.jpg",
       "comments": [],
       "date": "20.04.2023",
       "userId": "id-1681933528487",
-      "id": "ad-1681934171087"
+      "id": "ad-1681974848708"
+    },
+    {
+      "category": "Services",
+      "title": "service2",
+      "text": "service2",
+      "image": "https://storage1a.censor.net/images/e/d/7/a/ed7ae2bfad3861de9ec1dcfdec003bd1/original.jpg",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681974887711"
+    },
+    {
+      "category": "Services",
+      "title": "service3",
+      "text": "service3",
+      "image": "https://1gai.ru/uploads/posts/2021-05/1621543205_657.jpg",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681974911021"
+    },
+    {
+      "category": "Repair",
+      "title": "repair1",
+      "text": "repair1",
+      "image": "https://guide-images.cdn.ifixit.com/igi/nhAT61GtcAiwKCDC.large",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681974931519"
+    },
+    {
+      "category": "Repair",
+      "title": "repair2",
+      "text": "repair2",
+      "image": "https://www.dealntech.com/wp-content/uploads/2022/08/right-to-repair.jpg",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681974971353"
+    },
+    {
+      "category": "Sport",
+      "title": "sport1",
+      "text": "sport1",
+      "image": "https://media.npr.org/assets/img/2020/06/10/gettyimages-200199027-001-b5fb3d8d8469ab744d9e97706fa67bc5c0e4fa40-s1100-c50.jpg",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681975025314"
+    },
+    {
+      "category": "Sport",
+      "title": "sport2",
+      "text": "sport2",
+      "image": "https://www.uksport.gov.uk/-/media/images/bryony-pitman-gb-archery-at-tokyo.ashx",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681975041803"
+    },
+    {
+      "category": "Sport",
+      "title": "sport3",
+      "text": "sport3",
+      "image": "https://inbusiness.kz/uploads/2022-6/doKh9GCI.jpg",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681975061795"
+    },
+    {
+      "category": "Real estate",
+      "title": "re1",
+      "text": "re1",
+      "image": "https://m.foolcdn.com/media/dubs/original_images/real-estate-investing-basics.jpg",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681975092956"
+    },
+    {
+      "category": "Real estate",
+      "title": "re2",
+      "text": "re2",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070__480.jpg",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681975107175"
+    },
+    {
+      "category": "Electronics",
+      "title": "elec1",
+      "text": "elec1",
+      "image": "https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2021/03/28193129/Electronics.png",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681975144352"
+    },
+    {
+      "category": "Electronics",
+      "title": "elec2",
+      "text": "elec2",
+      "image": "https://tinuiti.com/wp-content/uploads/legacysitecontent/cpcs/posts_01/2019/05/28142626/amazon-electronics-homepage.png.png",
+      "comments": [],
+      "date": "20.04.2023",
+      "userId": "id-1681933528487",
+      "id": "ad-1681975161627"
     }
   ],
   "users": [
@@ -19,6 +129,30 @@
       "ads": [],
       "favorites": [],
       "id": "id-1681933528487"
+    },
+    {
+      "email": "3",
+      "username": "3",
+      "password": "3",
+      "ads": [],
+      "favorites": [],
+      "id": "id-1681935398688"
+    },
+    {
+      "email": "5",
+      "username": "5",
+      "password": "5",
+      "ads": [],
+      "favorites": [],
+      "id": "id-1681935477478"
+    },
+    {
+      "email": "432",
+      "username": "432",
+      "password": "432",
+      "ads": [],
+      "favorites": [],
+      "id": "id-1681972720893"
     }
   ]
 }

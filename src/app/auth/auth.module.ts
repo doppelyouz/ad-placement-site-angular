@@ -10,6 +10,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthEffects } from "./store/effects/auth.effects";
 import { reducers } from "./store/auth.reducer";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
     declarations: [RegisterComponent, LoginComponent],
@@ -19,6 +20,7 @@ import { reducers } from "./store/auth.reducer";
     imports: [
         CommonModule,
         FormsModule,
+        RouterModule,
         ReactiveFormsModule,
         BrowserModule,
         HttpClientModule,

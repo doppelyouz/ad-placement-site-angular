@@ -3,7 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { AuthService } from '../../services/auth.service';
 import { LoginRequestInterface } from '../../types/loginRequest.interface';
-import { login, register } from '../../store/actions/auth.actions';
+import { login } from '../../store/actions/auth.actions';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ import { login, register } from '../../store/actions/auth.actions';
 export class LoginComponent {
   myForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private store: Store, private authService: AuthService) {}
+  constructor(private fb: FormBuilder, private store: Store, private authService: AuthService, private router: Router) {}
 
   ngOnInit() {
     this.myForm = this.fb.group({
@@ -27,6 +28,7 @@ export class LoginComponent {
         ...this.myForm.value
       }
 
+      this.router.navigate(['/']);
       this.store.dispatch(login({loginRequest: request}))
       this.myForm.reset();
     }

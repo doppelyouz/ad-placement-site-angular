@@ -41,7 +41,8 @@ export class NewAdComponent implements OnInit {
 
       this.adService.createAd(this.id!, request).subscribe((ad => {
         console.log(ad);
-      })).unsubscribe();
+      }));
+
       this.myForm.reset();
     }
   }

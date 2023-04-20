@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { NewAdModule } from './shared/modules/new-ad/new-ad.module';
 import { TopbarComponent } from './core/components/topbar/topbar.component';
 import { AdService } from './shared/services/ads.service';
+import { MainModule } from './shared/modules/main/main.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AdService } from './shared/services/ads.service';
     FormsModule,
     ReactiveFormsModule,
     AuthModule,
-    NewAdModule
+    NewAdModule,
+    MainModule
   ],
   providers: [PersistanceService, UserService, AdService],
   bootstrap: [AppComponent]
