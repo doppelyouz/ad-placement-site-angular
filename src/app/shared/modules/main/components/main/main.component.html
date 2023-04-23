@@ -13,13 +13,13 @@
     <button class="btn btn-primary" (click)="clearFilters()">Clear Filters</button>
   </div>
   <div class="ads">
-    <div *ngFor="let ad of filteredAds" class="ad">
+    <div class="ad" *ngFor="let ad of filteredAds">
       <div class="ad__title">
         {{ ad.title }}
       </div>
-      <div class="ad__photo">
-        <img [src]="ad.image" />
-      </div>
+      <a [routerLink]='["/ad/" + ad.id]' class="ad__photo">
+        <img [src]="ad.image" alt="Ad image">
+      </a>
     </div>
   </div>
 </div>

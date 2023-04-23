@@ -2,7 +2,7 @@
   "ads": [
     {
       "category": "Services",
-      "title": "service1",
+      "title": "service1231321",
       "text": "serivece1",
       "image": "https://postium.ru/wp-content/uploads/2022/08/image9-696x348.jpg",
       "comments": [],
@@ -93,7 +93,7 @@
     {
       "category": "Real estate",
       "title": "re2",
-      "text": "re2",
+      "text": "re2 re2 re2re2re re2 re2 rer e2 re2 re2re2re2re2re2 re2re2re2 re2re2re2re 2re2re2re2re2 re2re2re2 re2re2re2re 2re2re2 re2re2re2 re2re2re2re2 re2re2re2re2 re2re2re2 re2 re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2 re2 re2 re2re2re2re2re2 re2re2re2 re2re2re2re2 re2re2re2re2 re2re2re2 re2 re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2 re2 re2 re2re2re2re2re2 re2re2re2 re2re2re2re2 re2re2re2re2 re2re2re2 re2 re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2 re2 re2 re2re2re2re2re2 re2re2re2 re2re2re2re2 re2re2re2re2 re2re2re2 re2 re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2 re2re2re2",
       "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070__480.jpg",
       "comments": [],
       "date": "20.04.2023",
@@ -123,13 +123,26 @@
   ],
   "users": [
     {
-      "email": "111111",
-      "username": "111111",
+      "email": "1",
+      "username": "1",
       "password": "1",
       "ads": [],
       "favorites": [],
       "id": "id-1681979227332",
       "avatar": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
+    },
+    {
+      "email": "2",
+      "username": "2",
+      "password": "2",
+      "ads": [],
+      "favorites": [
+        "ad-1681974887711",
+        "ad-1681975025314",
+        "ad-1681974911021"
+      ],
+      "id": "user-1681989375790",
+      "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
     }
   ]
 }

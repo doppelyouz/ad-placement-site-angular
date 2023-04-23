@@ -8,6 +8,7 @@ import { AuthGuard } from './core/guards/auth.guard';
 import { MainComponent } from './shared/modules/main/components/main/main.component';
 import { ProfileComponent } from './shared/modules/profile/components/profile/profile.component';
 import { SettingsComponent } from './shared/modules/settings/components/settings/settings.component';
+import { OneAdComponent } from './shared/modules/oneAd/components/one-ad/one-ad.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,11 @@ const routes: Routes = [
   {
     path: 'settings',
     component: SettingsComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'ad/:id',
+    component: OneAdComponent,
     canActivate: [AuthGuard]
   },
   {

@@ -17,6 +17,7 @@ import { AdService } from './shared/services/ads.service';
 import { MainModule } from './shared/modules/main/main.module';
 import { ProfileModule } from './shared/modules/profile/profile.module';
 import { SettingsModule } from './shared/modules/settings/settings.module';
+import { OneAdModule } from './shared/modules/oneAd/one-ad.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SettingsModule } from './shared/modules/settings/settings.module';
     NewAdModule,
     MainModule,
     ProfileModule,
-    SettingsModule
+    SettingsModule,
+    OneAdModule
   ],
   providers: [PersistanceService, UserService, AdService],
   bootstrap: [AppComponent]

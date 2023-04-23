@@ -22,7 +22,7 @@ export class AdService {
     return this.http.get<AdInterface>(`${url}/ads/${id}`);
   }
 
-  deleteAd(id: string) {
+  deleteAd(id: string): Observable<AdInterface> {
     return this.http.delete<AdInterface>(`${url}/ads/${id}`);
   }
 

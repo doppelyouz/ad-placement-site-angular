@@ -1,0 +1,155 @@
+.ad-page {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(179, 179, 179);
+  border-radius: 10px;
+
+  .ad {
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+
+    img {
+      max-width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .ad__editing {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .form-group {
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        padding: 0.4rem 0.7rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        outline: none;
+        border-color: #3366cc;
+      }
+      button[type="submit"] {
+        background-color: #3366cc;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      button[type="submit"]:hover {
+        background-color: #2655b3;
+      }
+      button[type="submit"]:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+      .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        border-color: #3366cc;
+        box-shadow: 0 0 0 0.2rem rgba(51, 102, 204, 0.25);
+      }
+    }
+
+    .ad__info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .ad__title {
+        font-size: 32px;
+      }
+
+      .ad__about {
+        color: #747474;
+        font-size: 18px;
+      }
+
+      .ad__date {
+        color: #747474;
+        font-size: 20px;
+      }
+
+      .ad__category {
+        font-size: 22px;
+      }
+
+      .ad__buttons {
+        display: flex;
+        gap: 10px;
+        .button {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 0.25rem;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: #fff;
+          cursor: pointer;
+        }
+
+        .button-delete {
+          background-color: grey;
+        }
+
+        .button-edit {
+          background-color: grey;
+        }
+
+        .button-favorite {
+          background-color: rgb(80, 53, 76);
+        }
+
+        .button-delete:hover {
+          background-color: #ff4141;
+        }
+
+        .button-edit:hover {
+          background-color: #525252;
+        }
+        .button-favorite:hover {
+          background-color: #361736;
+        }
+      }
+    }
+  }
+}

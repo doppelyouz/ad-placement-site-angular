@@ -1,0 +1,37 @@
+<div class="ad-page">
+  <div class="ad">
+    <img [src]="ad?.image" />
+    <div class="ad__info">
+      <div *ngIf="isEditing; else notEditing" class="ad__editing">
+        <div class="form-group">
+          <label>New Title: </label>
+          <input class="form-control" [(ngModel)]="newTitle"/>
+        </div>
+        <div class="form-group">
+          <label>New About: </label>
+          <input class="form-control" [(ngModel)]="newAbout"/>
+        </div>
+      </div>
+      <ng-template #notEditing>
+        <div class="ad__title">{{ ad?.title }}</div>
+        <div class="ad__about">{{ ad?.text }}</div>
+      </ng-template>
+      <div class="ad__date">{{ ad?.date }}</div>
+      <div class="ad__category">Category: {{ ad?.category }}</div>
+      <div class="ad__options">
+        <div *ngIf="yourAd; else favorite" class="ad__buttons">
+          <button class="button button-delete"(click)="onDelete()">DELETE</button>
+          <button class="button button-edit" *ngIf="!isEditing" (click)="editSwitcher()">EDIT</button>
+          <button class="button button-edit" *ngIf="isEditing" (click)="onEdit()">YES</button>
+          <button class="button button-edit" *ngIf="isEditing" (click)="editSwitcher()">NO</button>
+        </div>
+        <ng-template #favorite>
+          <div class="ad__buttons">
+            <button class="button button-favorite" (click)="onRemoveFromFavorite()" *ngIf="isFavorited">Remove from Favorites</button>
+            <button class="button button-favorite" (click)="onFavorite()" *ngIf="!isFavorited">Add to Favorites</button>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
