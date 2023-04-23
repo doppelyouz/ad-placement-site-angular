@@ -1,1 +1,13 @@
-<p>favorites works!</p>
+<div class="container">
+  <div class="ads" *ngIf="favorites">
+    <div class="ad" *ngFor="let ad of favorites">
+      <div class="ad__title">
+        {{ ad.title }}
+      </div>
+      <a [routerLink]='["/ad/" + ad.id]' class="ad__photo">
+        <img [src]="ad.image" alt="Ad image">
+      </a>
+    </div>
+  </div>
+  <div *ngIf="favorites.length <= 0" style="text-align: center; font-size: 36px;">You don't have favorites!</div>
+</div>

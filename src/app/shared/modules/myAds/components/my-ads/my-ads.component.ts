@@ -25,7 +25,7 @@ export class MyAdsComponent implements OnInit {
           user.ads.forEach((userAd: string) => {
             ads.forEach((ad: AdInterface) => {
               if (ad.id === userAd) {
-                this.yourAds?.push(ad)
+                this.yourAds.push(ad)
               }
             })
           })
