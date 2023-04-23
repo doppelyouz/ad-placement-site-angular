@@ -29,7 +29,7 @@ export class LoginComponent {
       }
 
       this.store.dispatch(login({loginRequest: request}))
-      this.router.navigate(['/profile'])
+      this.router.navigate(['/'])
       this.myForm.reset();
     }
   }

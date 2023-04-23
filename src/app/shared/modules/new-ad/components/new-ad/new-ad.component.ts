@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store, select } from '@ngrx/store';
-import { Observable, map } from 'rxjs';
+import { updateUser } from 'src/app/auth/store/actions/auth.actions';
 import { selectUser } from 'src/app/auth/store/auth.selector';
 import { AdService } from 'src/app/shared/services/ads.service';
 import { AdRequestInterface } from 'src/app/shared/types/adRequest.interface';
@@ -16,8 +16,7 @@ export class NewAdComponent implements OnInit {
 
   categories: string[] = ['Services', 'Real estate', 'Electronics', 'Sport', 'Repair'];
   myForm: FormGroup;
-  user$!: Observable<UserInterface | null>
-  id: string | undefined
+  user!: UserInterface
 
   constructor(private fb: FormBuilder, private store: Store, private adService: AdService) {
     this.myForm = this.fb.group({
@@ -35,19 +34,21 @@ export class NewAdComponent implements OnInit {
         ...this.myForm.value
       }
 
-      this.user$.subscribe(user => {
-        this.id = user?.id
-      })
-
-      this.adService.createAd(this.id!, request).subscribe((ad => {
-        console.log(ad);
+      this.adService.createAd(this.user.id, request).subscribe((ad => {
+        const updatedUser: UserInterface = {
+            ...this.user!,
+            ads: [...this.user?.ads!, ad.id]
+        };
+        this.store.dispatch(updateUser({ user: updatedUser }));
+        this.myForm.reset();
       }));
 
-      this.myForm.reset();
     }
   }
 
   ngOnInit() {
-    this.user$ = this.store.pipe(select(selectUser))
+    this.store.pipe(select(selectUser)).subscribe((user) => {
+      this.user = user as UserInterface
+    })
   }
 }

@@ -119,6 +119,16 @@
       "date": "20.04.2023",
       "userId": "id-1681979227332",
       "id": "ad-1681975161627"
+    },
+    {
+      "category": "Sport",
+      "title": "sadsadsa",
+      "text": "saddasd",
+      "image": "https://static-cse.canva.com/blob/846900/photo1502082553048f009c37129b9e1583341920812.jpeg",
+      "comments": [],
+      "date": "24.04.2023",
+      "userId": "user-1681989375790",
+      "id": "ad-1682285467352"
     }
   ],
   "users": [
@@ -126,7 +136,20 @@
       "email": "1",
       "username": "1",
       "password": "1",
-      "ads": [],
+      "ads": [
+        "ad-1681974848708",
+        "ad-1681974887711",
+        "ad-1681974911021",
+        "ad-1681974931519",
+        "ad-1681974971353",
+        "ad-1681975025314",
+        "ad-1681975041803",
+        "ad-1681975061795",
+        "ad-1681975092956",
+        "ad-1681975107175",
+        "ad-1681975144352",
+        "ad-1681975161627"
+      ],
       "favorites": [],
       "id": "id-1681979227332",
       "avatar": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
@@ -135,11 +158,13 @@
       "email": "2",
       "username": "2",
       "password": "2",
-      "ads": [],
+      "ads": [
+        "ad-1682285108439",
+        "ad-1682285467352"
+      ],
       "favorites": [
-        "ad-1681974887711",
         "ad-1681975025314",
-        "ad-1681974911021"
+        "ad-1681974848708"
       ],
       "id": "user-1681989375790",
       "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
