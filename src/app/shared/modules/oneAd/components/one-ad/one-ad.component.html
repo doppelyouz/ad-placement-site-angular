@@ -18,7 +18,10 @@
       </ng-template>
       <div class="ad__date">{{ ad?.date }}</div>
       <div class="ad__category">Category: {{ ad?.category }}</div>
-      <a class="ad__author" [routerLink]='"/users/" + author?.id'>
+      <a
+       class="ad__author"
+      [routerLink]='author?.id === user.id ?  "/profile" : "/users/" + author?.id'
+       >
         <div class="author-avatar">
           <img [src]="author?.avatar">
         </div>
@@ -48,7 +51,11 @@
     <button (click)="submitComment()">Отправить</button>
   </div>
   <div class="comment-stack"  *ngIf="ad && ad.comments && ad.comments.length > 0">
-    <a class="comment" *ngFor="let comment of ad?.comments"  [routerLink]='"/users/" + comment.user.id'>
+    <a
+      class="comment"
+      *ngFor="let comment of ad?.comments"
+      [routerLink]='comment.user.id === user.id ?  "/profile" : "/users/" + comment.user.id'
+    >
       <div class="author-avatar">
         <img [src]="comment.user.avatar" alt="User avatar">
       </div>

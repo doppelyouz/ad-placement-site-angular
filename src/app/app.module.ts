@@ -21,6 +21,7 @@ import { OneAdModule } from './shared/modules/oneAd/one-ad.module';
 import { FavoritesModule } from './shared/modules/favorites/favorites.module';
 import { MyAdsModule } from './shared/modules/myAds/my-ads.module';
 import { UserModule } from './shared/modules/user/user.module';
+import { HisAdsModule } from './shared/modules/his-ads/his-ads.module';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { UserModule } from './shared/modules/user/user.module';
     OneAdModule,
     FavoritesModule,
     MyAdsModule,
-    UserModule
+    UserModule,
+    HisAdsModule
   ],
   providers: [PersistanceService, UserService, AdService],
   bootstrap: [AppComponent]
