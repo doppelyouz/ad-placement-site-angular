@@ -18,6 +18,15 @@
       </ng-template>
       <div class="ad__date">{{ ad?.date }}</div>
       <div class="ad__category">Category: {{ ad?.category }}</div>
+      <div class="ad__author">
+        <div class="author-avatar">
+          <img [src]="author?.avatar">
+        </div>
+        <p *ngIf="user.id !== ad?.userId; else youAreAuthor">Author: {{ author?.username }}</p>
+        <ng-template #youAreAuthor>
+          You are author of this ad!
+        </ng-template>
+      </div>
       <div class="ad__options">
         <div *ngIf="yourAd; else favorite" class="ad__buttons">
           <button class="button button-delete"(click)="onDelete()">DELETE</button>
@@ -31,6 +40,21 @@
             <button class="button button-favorite" (click)="onFavorite()" *ngIf="!isFavorited">Add to Favorites</button>
           </div>
         </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="ad__comments">
+    <textarea [(ngModel)]="comment" placeholder="Напишите комментарий..."></textarea>
+    <button (click)="submitComment()">Отправить</button>
+  </div>
+  <div class="comment-stack"  *ngIf="ad && ad.comments && ad.comments.length > 0">
+    <div class="comment" *ngFor="let comment of ad?.comments">
+      <div class="author-avatar">
+        <img [src]="comment.user.avatar" alt="User avatar">
+      </div>
+      <div class="comment-details">
+        <div class="comment-username">{{comment.user.username}}</div>
+        <div class="comment-text">{{comment.commentAbout}}</div>
       </div>
     </div>
   </div>

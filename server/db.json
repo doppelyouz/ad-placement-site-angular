@@ -15,7 +15,36 @@
       "title": "service2",
       "text": "service2",
       "image": "https://storage1a.censor.net/images/e/d/7/a/ed7ae2bfad3861de9ec1dcfdec003bd1/original.jpg",
-      "comments": [],
+      "comments": [
+        {
+          "commentAbout": "gregregre",
+          "user": {
+            "username": "2",
+            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
+          }
+        },
+        {
+          "commentAbout": "gsegse",
+          "user": {
+            "username": "2",
+            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
+          }
+        },
+        {
+          "commentAbout": "dhrthdtr",
+          "user": {
+            "username": "2",
+            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
+          }
+        },
+        {
+          "commentAbout": "gsergrse",
+          "user": {
+            "username": "2",
+            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
+          }
+        }
+      ],
       "date": "20.04.2023",
       "userId": "id-1681979227332",
       "id": "ad-1681974887711"
@@ -25,7 +54,15 @@
       "title": "service3",
       "text": "service3",
       "image": "https://1gai.ru/uploads/posts/2021-05/1621543205_657.jpg",
-      "comments": [],
+      "comments": [
+        {
+          "commentAbout": "dasdsa",
+          "user": {
+            "username": "1",
+            "avatar": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
+          }
+        }
+      ],
       "date": "20.04.2023",
       "userId": "id-1681979227332",
       "id": "ad-1681974911021"
@@ -122,8 +159,8 @@
     },
     {
       "category": "Sport",
-      "title": "sadsadsa",
-      "text": "saddasd",
+      "title": "222222222222222222",
+      "text": "222222222222",
       "image": "https://static-cse.canva.com/blob/846900/photo1502082553048f009c37129b9e1583341920812.jpeg",
       "comments": [],
       "date": "24.04.2023",
@@ -159,15 +196,26 @@
       "username": "2",
       "password": "2",
       "ads": [
+        "ad-1682285108439",
         "ad-1682285467352"
       ],
       "favorites": [
         "ad-1681974911021",
-        "ad-1681974887711",
-        "ad-1681974848708"
+        "ad-1681975025314"
       ],
       "id": "user-1681989375790",
       "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
+    },
+    {
+      "email": "3",
+      "username": "3333333333333",
+      "password": "3",
+      "ads": [],
+      "favorites": [
+        "ad-1681975092956"
+      ],
+      "id": "user-1682286171389",
+      "avatar": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
     }
   ]
 }

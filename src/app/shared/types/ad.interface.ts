@@ -1,3 +1,5 @@
+import { CommentInterface } from "./comment.interface";
+
 export interface AdInterface {
   id: string;
   userId: string;
@@ -6,5 +8,5 @@ export interface AdInterface {
   text: string;
   date: string;
   image: string;
-  comments: string[]
+  comments: CommentInterface[]
 }
