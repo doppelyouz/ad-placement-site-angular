@@ -11,6 +11,7 @@ import { SettingsComponent } from './shared/modules/settings/components/settings
 import { OneAdComponent } from './shared/modules/oneAd/components/one-ad/one-ad.component';
 import { MyAdsComponent } from './shared/modules/myAds/components/my-ads/my-ads.component';
 import { FavoritesComponent } from './shared/modules/favorites/components/favorites/favorites.component';
+import { UserComponent } from './shared/modules/user/components/user/user.component';
 
 const routes: Routes = [
   {
@@ -54,6 +55,11 @@ const routes: Routes = [
   {
     path: 'favorites',
     component: FavoritesComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'users/:id',
+    component: UserComponent,
     canActivate: [AuthGuard]
   },
   {

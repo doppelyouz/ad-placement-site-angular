@@ -15,36 +15,7 @@
       "title": "service2",
       "text": "service2",
       "image": "https://storage1a.censor.net/images/e/d/7/a/ed7ae2bfad3861de9ec1dcfdec003bd1/original.jpg",
-      "comments": [
-        {
-          "commentAbout": "gregregre",
-          "user": {
-            "username": "2",
-            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
-          }
-        },
-        {
-          "commentAbout": "gsegse",
-          "user": {
-            "username": "2",
-            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
-          }
-        },
-        {
-          "commentAbout": "dhrthdtr",
-          "user": {
-            "username": "2",
-            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
-          }
-        },
-        {
-          "commentAbout": "gsergrse",
-          "user": {
-            "username": "2",
-            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"
-          }
-        }
-      ],
+      "comments": [],
       "date": "20.04.2023",
       "userId": "id-1681979227332",
       "id": "ad-1681974887711"
@@ -56,10 +27,11 @@
       "image": "https://1gai.ru/uploads/posts/2021-05/1621543205_657.jpg",
       "comments": [
         {
-          "commentAbout": "dasdsa",
+          "commentAbout": "fdsfews",
           "user": {
-            "username": "1",
-            "avatar": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
+            "username": "2",
+            "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp",
+            "id": "user-1681989375790"
           }
         }
       ],
@@ -201,7 +173,8 @@
       ],
       "favorites": [
         "ad-1681974911021",
-        "ad-1681975025314"
+        "ad-1681975025314",
+        "ad-1681974848708"
       ],
       "id": "user-1681989375790",
       "avatar": "https://img.ixbt.site/live/topics/preview/00/03/68/46/f3571390bc.webp"

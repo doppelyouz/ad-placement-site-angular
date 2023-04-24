@@ -18,7 +18,7 @@
       </ng-template>
       <div class="ad__date">{{ ad?.date }}</div>
       <div class="ad__category">Category: {{ ad?.category }}</div>
-      <div class="ad__author">
+      <a class="ad__author" [routerLink]='"/users/" + author?.id'>
         <div class="author-avatar">
           <img [src]="author?.avatar">
         </div>
@@ -26,7 +26,7 @@
         <ng-template #youAreAuthor>
           You are author of this ad!
         </ng-template>
-      </div>
+      </a>
       <div class="ad__options">
         <div *ngIf="yourAd; else favorite" class="ad__buttons">
           <button class="button button-delete"(click)="onDelete()">DELETE</button>
@@ -48,7 +48,7 @@
     <button (click)="submitComment()">Отправить</button>
   </div>
   <div class="comment-stack"  *ngIf="ad && ad.comments && ad.comments.length > 0">
-    <div class="comment" *ngFor="let comment of ad?.comments">
+    <a class="comment" *ngFor="let comment of ad?.comments"  [routerLink]='"/users/" + comment.user.id'>
       <div class="author-avatar">
         <img [src]="comment.user.avatar" alt="User avatar">
       </div>
@@ -56,6 +56,6 @@
         <div class="comment-username">{{comment.user.username}}</div>
         <div class="comment-text">{{comment.commentAbout}}</div>
       </div>
-    </div>
+    </a>
   </div>
 </div>

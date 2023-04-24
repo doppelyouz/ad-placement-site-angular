@@ -104,8 +104,10 @@
 
     .ad__author {
       display: flex;
-      align-items: center;
+      align-items: end;
       gap: 20px;
+      color: inherit;
+      text-decoration: none;
 
       .author-avatar {
         overflow: hidden;
@@ -239,6 +241,8 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    color: inherit;
+    text-decoration: none;
   }
 
   .comment img {

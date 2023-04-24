@@ -49,7 +49,8 @@ export class OneAdComponent implements OnInit {
       this.userService.getUsersById(ad.userId).subscribe(author => {
         this.author = {
           avatar: author.avatar,
-          username: author.username
+          username: author.username,
+          id: author.id
         }
       })
     })
@@ -112,7 +113,8 @@ export class OneAdComponent implements OnInit {
             commentAbout: this.comment,
             user: {
               username: this.user.username,
-              avatar: this.user.avatar
+              avatar: this.user.avatar,
+              id: this.user.id
             }
         }]
       }

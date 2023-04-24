@@ -20,6 +20,7 @@ import { SettingsModule } from './shared/modules/settings/settings.module';
 import { OneAdModule } from './shared/modules/oneAd/one-ad.module';
 import { FavoritesModule } from './shared/modules/favorites/favorites.module';
 import { MyAdsModule } from './shared/modules/myAds/my-ads.module';
+import { UserModule } from './shared/modules/user/user.module';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { MyAdsModule } from './shared/modules/myAds/my-ads.module';
     SettingsModule,
     OneAdModule,
     FavoritesModule,
-    MyAdsModule
+    MyAdsModule,
+    UserModule
   ],
   providers: [PersistanceService, UserService, AdService],
   bootstrap: [AppComponent]
